@@ -22,7 +22,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PlayStation:PS1_MULTI_OUT"
 			(at 21.59 -11.43 0)
 			(effects
 				(font
@@ -40,8 +40,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "PlayStation 1 Multi AV Out port"
 			(at 21.59 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "AV PlayStation Multi Out PS1 PSX"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -369,13 +378,12 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PlayStation:PS1_SIO"
 			(at 21.59 -11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
@@ -387,8 +395,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "PlayStation 1 Serial I/O port (SIO1)"
 			(at 21.59 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Playstation SIO Serial PS1 PSX"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)

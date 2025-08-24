@@ -354,7 +354,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -8.382 24.13 0)
+			(at -9.144 17.272 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -369,13 +369,12 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PlayStation:PS1_SIO"
 			(at 21.59 -11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
@@ -387,8 +386,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "PlayStation 1 Serial I/O port (SIO1)"
 			(at 21.59 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Playstation SIO Serial PS1 PSX"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -398,8 +406,8 @@
 		)
 		(symbol "SIO_1_1"
 			(rectangle
-				(start -10.16 22.86)
-				(end 11.43 -22.225)
+				(start -10.16 15.24)
+				(end 11.43 -14.605)
 				(stroke
 					(width 0)
 					(type default)
@@ -409,8 +417,8 @@
 				)
 			)
 			(rectangle
-				(start 1.27 11.43)
-				(end 9.525 -11.43)
+				(start 1.27 9.525)
+				(end 9.525 -9.525)
 				(stroke
 					(width 0)
 					(type default)
@@ -420,8 +428,8 @@
 				)
 			)
 			(rectangle
-				(start 2.54 10.16)
-				(end 8.509 -10.16)
+				(start 2.54 8.255)
+				(end 8.509 -8.255)
 				(stroke
 					(width 0)
 					(type default)
@@ -431,8 +439,8 @@
 				)
 			)
 			(rectangle
-				(start 4.826 8.255)
-				(end 6.35 -8.255)
+				(start 4.826 6.35)
+				(end 6.35 -6.35)
 				(stroke
 					(width 0)
 					(type default)
@@ -442,8 +450,8 @@
 				)
 			)
 			(rectangle
-				(start 6.096 8.89)
-				(end 6.985 -8.89)
+				(start 6.096 6.985)
+				(end 6.985 -6.985)
 				(stroke
 					(width 0)
 					(type default)
@@ -452,7 +460,7 @@
 					(type outline)
 				)
 			)
-			(text "AV MULTI OUT"
+			(text "SERIAL I/O"
 				(at -0.635 0 900)
 				(effects
 					(font
@@ -461,9 +469,9 @@
 				)
 			)
 			(pin passive line
-				(at -12.7 12.7 0)
+				(at -12.7 5.08 0)
 				(length 2.54)
-				(name "RGB-G"
+				(name "RXD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -479,63 +487,9 @@
 				)
 			)
 			(pin passive line
-				(at -12.7 -10.16 0)
+				(at -12.7 12.7 0)
 				(length 2.54)
-				(name "A-GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -12.7 -7.62 0)
-				(length 2.54)
-				(name "Right"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -12.7 -12.7 0)
-				(length 2.54)
-				(name "A-GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -12.7 15.24 0)
-				(length 2.54)
-				(name "RGB-R"
+				(name "+3.3V"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -551,9 +505,9 @@
 				)
 			)
 			(pin passive line
-				(at -12.7 20.32 0)
+				(at -12.7 -5.08 0)
 				(length 2.54)
-				(name "+5V"
+				(name "DSR"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -569,9 +523,9 @@
 				)
 			)
 			(pin passive line
-				(at -12.7 10.16 0)
+				(at -12.7 7.62 0)
 				(length 2.54)
-				(name "RGB-B"
+				(name "TXD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -587,9 +541,9 @@
 				)
 			)
 			(pin passive line
-				(at -12.7 -17.78 0)
+				(at -12.7 2.54 0)
 				(length 2.54)
-				(name "GND"
+				(name "CTS"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -605,9 +559,9 @@
 				)
 			)
 			(pin passive line
-				(at -12.7 2.54 0)
+				(at -12.7 -2.54 0)
 				(length 2.54)
-				(name "Chroma"
+				(name "DTR"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -623,9 +577,9 @@
 				)
 			)
 			(pin passive line
-				(at -12.7 7.62 0)
+				(at -12.7 -10.16 0)
 				(length 2.54)
-				(name "CVBS"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -643,7 +597,7 @@
 			(pin passive line
 				(at -12.7 0 0)
 				(length 2.54)
-				(name "Luma"
+				(name "RTS"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -659,25 +613,7 @@
 				)
 			)
 			(pin passive line
-				(at -12.7 -5.08 0)
-				(length 2.54)
-				(name "Left"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -12.7 -20.32 0)
+				(at -12.7 -12.7 0)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -686,7 +622,7 @@
 						)
 					)
 				)
-				(number "MP"
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
